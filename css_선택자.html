@@ -49,6 +49,30 @@
                 class는 중복사용 가능, 한 클래스에 여러 클래스명 사용가능, 클래스명 한칸띄어쓰기로 여러 클래스명 부여가능
             </td>
         </tr>
+        <tr>
+            <td>중복선택자</td>
+            <td>,</td>
+            <td>여러개의 선택자를 나열해서 사용할수 있다.</td>
+        </tr>
+        <tr>
+            <td>중복선택자</td>
+            <td>붙여쓰기(태그,클래스명)</td>
+            <td>지정된 태그중 해당 클래스이름만 부름</td>
+        </tr>
+        <tr>
+            <td>후손선택자</td>
+            <td>선택자 선택자</td>
+            <td>부모자 내부에 있는 요소를 모두 부른다.</td>
+        </tr>
+        <tr>
+            <td>자손자선택자</td>
+            <td>부모자>자손자</td>
+            <td>다이렉트 자손자에 한해서 설정가능</td>
+        </tr>
+
+
+
+
     </table>
 
     <h2>예제</h2>
@@ -57,6 +81,22 @@
     <div class="box">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum delectus nemo blanditiis explicabo voluptatum maiores, dignissimos iure at vel dolor possimus minus, quaerat molestiae dicta dolorum odio maxime harum sapiente!</div>
     <div class="box red">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem iusto blanditiis praesentium laborum non corporis soluta repellat! Fugit quos in labore quas dolorem inventore adipisci, accusantium expedita reiciendis numquam pariatur.</div>
     <!-- 한칸띄우면 띄운 단어별로 별도의 단어로도 클래스 사용가능하다 -->
+    
+    <p class="red">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti nisi eligendi magni, quas nemo excepturi id culpa, voluptates iusto, vitae enim. Distinctio quis velit ab, error sequi dolorem accusamus ratione!</p>
+    
+    <div class="list">
+        <ul>
+            <li>
+                <em>menu1</em>
+            </li>
+            <li>menu2</li>
+            <li>menu3</li>
+            <li>menu4</li>
+        </ul>
+        <em>자손자에 대한 정의</em>
+    </div>
+    
+    
     <style>
         * {font-size: 18px;}
         h1 {font-size: 30px;}
@@ -78,6 +118,29 @@
             padding: 10px;
         }
         .red{
+            color: red;
+        }
+        p.red{
+            text-decoration: underline;
+        }
+
+        .list em{
+            font-size: 30px;
+        }
+        .list li{
+            color: blue;
+        }
+        .list ul{
+            background-color: aqua;
+        }
+
+        /* 자손자선택법 */
+        .list>ul>li>em{
+            font-style: normal;
+        }
+        
+        .list>em{
+            font-style: normal;
             color: red;
         }
 
