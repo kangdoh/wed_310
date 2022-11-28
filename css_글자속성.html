@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>글자속성</h1>
+        <p>글자에 관련된 속성은 글꼴,글자크기,글자굵기 기울임,줄간격,대소문자,글자색상 등 주된 일곱 가지를 필수적으로 알고 있어야한다.</p>
+        <em>color를 제외한 위에 6가지는 한줄쓰기 가능</em>
+        <table border="1">
+            <tr>
+                <td>속성명</td>
+                <td>종류</td>
+                <td>설명</td>
+            </tr>
+            <tr>
+                <td>font-family</td>
+                <td>컴퓨터에 등록되어 있는 폰트명/ 웹폰트활용가능</td>
+                <td>글꼴을 인용부호에 감싼다<br>
+                    다국적사용자를 대상으로 웹페이를 제공할때 serif(명조체),Sans-serif(고딕체) 글꼴 마지막에 작성
+                </td>
+            </tr>
+            <tr>
+                <td>font-size</td>
+                <td>기본16px를 100%기준으로 사용합니다.</td>
+                <td>수치의 px등의 단위를 붙여서 지정한다.</td>
+            </tr>
+            <tr>
+                <td>font-style</td>
+                <td>italic / normal</td>
+                <td>글자의 기울기를 지정</td>
+            </tr>
+            <tr>
+                <td>font-variant</td>
+                <td>small-caps / normal</td>
+                <td>작은대문자로 변경</td>
+            </tr>
+            <tr>
+                <td>font-weight</td>
+                <td>bold / normal / 숫자지정 - 400이 기본값, 600이상 볼드</td>
+                <td>글자의 두께를 지정한다. font의 종류의 따라 달라지며 일정한 값은 아니다.</td>
+            </tr>
+            <tr>
+                <td>line-height</td>
+                <td>1은 100%의 값으로 줄간격 없음을 표기, 기본값은 1.4(140%)</td>
+                <td>글자의 높낮이를 따지는 행간을 조정한다.</td>
+            </tr>
+        </table>
+        <strong>font라는 속성으로 일열쓰기 가능<br>
+            font : (font-weight,font-style,font-variant) (font-size/line-height)
+            (font-family)<br>
+            세가지 순서대로 작성하되, 글자크기와 글꼴을 생략할수 없음<br>
+            (괄호)안의 내용은 순서가 바뀔수 있고ㅡ 실제 작성시 괄호는 쓰지 않음</strong>
+
+        <div class="box">
+            font 라는 속성이 우선순위 이며 나중에 위에 이름값과 같지 않더라도 덮어쓰기 가능
+        </div>
+
+        <h2>예제</h2>
+        <div class="font">
+            <ul>
+                <li>lorem</li>
+                <li>lorem</li>
+                <li>lorem</li>
+                <li>lorem</li>
+                <li>lorem Lorem ipsum dolor sit amet consectetur adipis
+                    <br>
+                    icing elit. Iusto
+                    <br>
+                    id atque, vitae, cumque facilis voluptates voluptate
+                    <br>
+                    sunt quia quod necessitatibus laborum odit fugiat consectetur
+                    <br>
+                    enim, quo perspiciatis vel possimus dicta.</li>
+                <li>lorem Lorem ipsum dolor sit amet consectetur adipis
+                    <br>
+                    icing elit. Iusto
+                    <br>
+                    id atque, vitae, cumque facilis voluptates voluptate
+                    <br>
+                    sunt quia quod necessitatibus laborum odit fugiat consectetur
+                    <br>
+                    enim, quo perspiciatis vel possimus dicta.</li>
+                <li>lorem Lorem ipsum dolor sit amet consectetur adipis
+                    <br>
+                    icing elit. Iusto
+                    <br>
+                    id atque, vitae, cumque facilis voluptates voluptate
+                    <br>
+                    sunt quia quod necessitatibus laborum odit fugiat consectetur
+                    <br>
+                    enim, quo perspiciatis vel possimus dicta.</li>
+                <li>lorem Lorem ipsum dolor sit amet consectetur adipis
+                    <br>
+                    icing elit. Iusto
+                    <br>
+                    id atque, vitae, cumque facilis voluptates voluptate
+                    <br>
+                    sunt quia quod necessitatibus laborum odit fugiat consectetur
+                    <br>
+                    enim, quo perspiciatis vel possimus dicta.</li>
+            </ul>
+        </div>
+
+        <style>
+            .font > ul > li {
+                font-family: 'Times New Roman', Times, serif;
+            }
+
+            .font > ul > li:nth-child(1) {
+                font-size: 20px;
+            }
+
+            .font > ul > li:nth-child(2) {
+                font-style: italic;
+            }
+
+            .font > ul > li:nth-child(3) {
+                font-variant: small-caps;
+            }
+
+            .font > ul > li:nth-child(4) {
+                font-weight: 600;
+            }
+
+            .font > ul > li:nth-child(5) {
+                line-height: 2;
+            }
+
+            .font > ul > li:nth-child(6) {
+                font: bold italic small-caps 10px/1 '맑은 고딕';
+            }
+
+            .font > ul > li:nth-child(7) {
+                font: 20px/2.5 '굴림';
+            }
+
+            .font > ul > li:nth-child(8) {
+                font: 30px 'arial';
+            }
+        </style>
+
+        <hr>
+
+        <h3>글자관련추가속성</h3>
+        <p>주로글자나 단어보다는 문장에서 사용하는 속성</p>
+        <ul>
+            <li>text-aline
+                <ul>
+                    <li>특징 - 왼쪽,오른쪽, 가운데, 양쪽정렬을 나타냄</li>
+                    <li>주의사항 - 블럭요소에서만 사용가능</li>
+                    <li>justify는 내용안에 줄바꿈이 일어날만큼 양이 있을경우 보임</li>
+                </ul>
+            </li>
+            <li>text-indent
+                <ul>
+                    <li>특징 - 문단의 첫머리 들여쓰기 기능</li>
+                    <li>주의사항 - 블럭만 사용 / 단위작성</li>
+                </ul>
+            </li>
+            <li>text-decoration
+                <ul>
+                    <li>underline - 밑줄</li>
+                    <li>linethrough - 가운데줄(취소선)</li>
+                    <li>overline - 윗줄</li>
+                    <li>none - 제거</li>
+                </ul>
+            </li>
+            <li>letter-spacing - 자간설정 단위적용</li>
+
+            <li>text-transform
+                <ul>
+                    <li>uppercase-모두대문자변경</li>
+                    <li>lowercase-소문자로변경</li>
+                    <li>capitalize-첫글자만 대문자(띄어쓰기 후 대문자)</li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="text">
+            <p class="left">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <p class="right">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <p class="justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius aspernatur porro
+                iure quis quasi, voluptas enim dolor temporibus quas saepe reprehenderit
+                sapiente nesciunt quidem in iste nihil laboriosam esse quisquam?</p>
+            <p class="indent">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatem laudantium consequuntur aut deleniti, earum quo vel nobis rem! Amet
+                esse dignissimos alias veniam quo nihil quidem necessitatibus velit repellendus
+                officiis?</p>
+
+            <ul class="dec">
+                <li>밑줄</li>
+                <li>가운데줄</li>
+                <li>윗줄</li>
+            </ul>
+
+            <p class="letter">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, quam sunt iusto
+                exercitationem animi error quo natus incidunt reprehenderit beatae! Tempora
+                eveniet repudiandae id et saepe reprehenderit perferendis autem? Maiores?
+            </p>
+            <ul class="trans">
+                <li>uppercase-모두대문자변경</li>
+                <li>lowercase-소문자로변경</li>
+                <li>capitalize-첫글자만 대문자(띄어쓰기 후 대문자)</li>
+            </ul>
+        </div>
+
+        <style>
+            .box {
+                background-color: yellow;
+            }
+
+            .text p {
+                background-color: beige;
+            }
+
+            .text > .left {
+                text-align: left;
+            }
+            .text > .right {
+                text-align: right;
+            }
+            .text > .center {
+                text-align: center;
+            }
+            .text > .justify {
+                text-align: justify;
+            }
+            .text > .indent {
+                text-indent: 50px;
+            }
+
+            .dec > li:nth-child(1) {
+                text-decoration: underline;
+            }
+            .dec > li:nth-child(2) {
+                text-decoration: line-through;
+            }
+            .dec > li:nth-child(3) {
+                text-decoration: overline;
+            }
+
+            .letter {
+                letter-spacing: 20px;
+            }
+
+            .trans > li:nth-child(1) {
+                text-transform: uppercase;
+            }
+            .trans > li:nth-child(2) {
+                text-transform: lowercase;
+            }
+            .trans > li:nth-child(3) {
+                text-transform: capitalize;
+            }
+        </style>
+
+    </body>
+</html>
