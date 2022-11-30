@@ -1,0 +1,87 @@
+/* 언어설정 */
+@charset "utf-8";
+
+/* clearbox정렬박식
+박스 A와 박스A-2의 가로정렬
+.boxA{
+    width: 20%;
+    float: left;
+}
+.boxA-2{
+    width: 80%;
+    float: left;
+}
+
+.wrap:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+박스3과 박스4와 박스5의 가로정렬을 진행하겠다.
+.box3{width: 33.3333%; float: left;}
+.box4{width: 33.3333%; float: left;}
+.box5{width: 33.3333%; float: left;}
+
+.boxC:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.box6{width: 80%; float: left;}
+.box7{width: 20%; float: left;}
+
+.boxD:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+------------------------------------------------------------------------------- */
+
+
+/* flex정렬방식 */
+
+
+
+
+@media (min-width:500px){
+    .boxD{
+        display: flex;
+    }
+    .box6{
+        width: 80%;
+    }
+    .box7{
+        width: 20%;
+    }
+}
+
+@media (min-width:600px){
+    .boxC{
+        display: flex;
+    }
+    .boxC>div{
+        flex: 1;
+    }
+}
+
+@media (min-width:960px){
+/* warp 플렉스정렬 */
+.wrap{
+    display: flex;
+}
+.boxA{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+.boxA>div{
+    flex: 1;
+}
+.boxA-2{
+    width: 80%;
+}
+}
+

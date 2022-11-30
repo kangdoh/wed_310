@@ -1,0 +1,23 @@
+@charset "uft-8";
+
+
+.box3::after{
+    content: "";
+    clear: both;
+    display: block;
+    width: 100%;
+}
+
+.box3-2{
+    float: left;
+    width: 40%;
+}
+
+.boxa{
+    width: 60%;
+    float: left;
+}
+.boxb{
+    width: 60%;
+    float: left;
+}

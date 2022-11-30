@@ -1,0 +1,78 @@
+@charset "uft-8";
+
+.box1::after{
+    clear: both;
+    content: "";
+    display: block;
+}
+.box1-1{
+    width: 20%;
+    float: left;
+}
+.box1-2{
+    width: 80%;
+    float: left;
+}
+
+
+.box3::after{
+    clear: both;
+    content: "";
+    display: block;
+    width: 100%;
+}
+.box3-1{
+    width: 33.3333%;
+    float: left;
+}
+.box3-2{
+    width: 33.3333%;
+    float: left;
+}
+.box3-3{
+    width: 33.3333%;
+    float: left;
+}
+
+.box4::after{
+    clear: both;
+    content: "";
+    display: block;
+    width: 100%;
+}
+.box4-1{
+    width: 20%;
+    float: left;
+}
+.boxa{
+    width: 80%;
+    float: right;
+}
+.boxb{
+    width: 80%;
+    float: right;
+}
+
+li{
+    float: left;
+    list-style-type: none;
+    padding: 10px;
+    margin: 5px;
+    background-color: pink;
+    border-radius: 1.5em;
+    text-align: center;
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+}
+
+ul>li>ul>li{
+    float: none;
+}
+
+ul>li>ul{
+    padding: 0;
+}
+

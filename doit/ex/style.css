@@ -1,0 +1,103 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#wrap{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0% auto;
+}
+
+/* 헤더영역 */
+.header{
+    display: flex;
+    width: 100%;
+    position: relative;
+    justify-content: flex-end;
+}
+.header>div{
+
+}
+.logo{
+    height: 142px;
+    width: 12.5%;
+    background-color: #ff6b57;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.nav{
+    height: 80px;
+    width: 87.5%;
+    background-color: #ff6b57;
+}
+
+
+
+/* 슬라이드영역 */
+.slide{
+    width: 50%;
+    background-color: #3c90be;
+    height: 440px;
+}
+
+/* 갤러리영억 */
+.gallery{
+    width: 27%;
+    background-color: #f8de73;
+}
+
+/* 인기검색어 */
+.rankup{
+    width: 23%;
+    background-color: #00d2a5;
+}
+
+
+
+
+/* 최근글영역 */
+.latest{
+    width: 30%;
+    background-color: #9cabe4;
+    height: 270px;
+}
+
+/* 인기글영역 */
+.popular{
+    width: 30%;
+    background-color: #d76817;
+}
+
+/* 배너영역 */
+.banner{
+    width: 23%;
+}
+.banner_box1{
+    background-color: #0175bb;
+    height: 50%;
+}
+.banner_box2{
+    background-color: #1261c9;
+    height: 50%;
+}
+
+/* 소셜네트워크 */
+.sns{
+    width: 17%;
+    background-color: #fe6eda;
+}
+
+
+
+/* 푸터영역 */
+.footer{
+    width: 100%;
+    background-color: #474747;
+    height: 94px;
+}

@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+
+.box2::after{
+    content: "";
+    display: block;
+    clear: both;
+    width: 100%;
+}
+.box2-1{
+    width: 50%;
+    float: left;
+}
+.box2-2{
+    width: 50%;
+    float: left;
+}
+
+
+
+.box4::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.box4-1{
+    width: 20%;
+    float: left;
+}
+.box4-2{
+    width: 60%;
+    float: left;
+}
+.box4-3{
+    width: 20%;
+    float: left;
+}
