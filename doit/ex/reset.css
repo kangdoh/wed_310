@@ -1,0 +1,59 @@
+/* 언어설정 */
+@charset "UTF-8";
+
+/* 전체설정 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 미디어쿼리구간###############################################################################################*/
+
+
+/* 모바일구간 320px */
+@media(min-width:320px){
+    .menu_bnt{
+        display: block;
+    }
+    .nav_list a{
+        display: none;
+    }
+
+    h1{
+        width: 30%;
+        height: 200px;
+    }
+    nav{
+        width: 70%;
+        height: 100px;
+    }
+
+}
+
+/* 테블릿구간 768px */
+@media(min-width:768px){
+    .menu_bnt{
+        display: none;
+    }
+}
+    
+
+/* 웹구간 1280px */
+@media(min-width:1280px){
+    .menu_bnt{
+        display: none;
+    }
+}
